@@ -1,0 +1,245 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "poppins", sans-serif;
+    }
+    
+    .now-playing {
+        cursor: pointer;
+    }
+    
+    body {
+        margin: 0;
+    }
+    
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .secondPage {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        background-image: url("https://cdn4.vectorstock.com/i/1000x1000/37/78/music-tree-with-hearts-and-notes-vector-7933778.jpg");
+    }
+    
+    .musicContainer {
+        margin-top: 30px;
+        margin-left: 30%;
+        width: 350px;
+        height: 672px;
+        padding: 25px 30px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 15px;
+        background: linear-gradient(black 0%, #546e7a 100%);
+        box-shadow: 0 0 0 5px white, 0 0 2px white, 13px 13px 20px black, -10px -10px 20px whitesmoke;
+    }
+    
+    .fav:hover,
+    .moreMusic:hover {
+        transform: scale(1.5);
+        cursor: pointer;
+    }
+    
+    .repeat:hover,
+    .prev:hover,
+    .play-pause:hover,
+    .next:hover,
+    .vol:hover {
+        transform: scale(1.2);
+    }
+    
+    .name:hover,
+    .artist:hover {
+        color: red;
+    }
+    
+    .musicContainer i {
+        cursor: pointer;
+    }
+    
+    .top-bar,
+    .controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .top-bar div {
+        font-size: 30px;
+        color: #ffffff;
+    }
+    
+    .top-bar div:first-child {
+        margin-left: -7px;
+        font-size: 22px;
+    }
+    
+    .top-bar span {
+        font-size: 18px;
+        margin-left: -3px;
+        color: #ffffff;
+    }
+    
+    .img-area {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        object-fit: contain;
+        background-size: 100% 100%;
+        background-position: center;
+        margin-top: 25px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px white, 0 0 2px white, 13px 13px 20px black, -10px -10px 20px whitesmoke;
+    }
+    
+    .img-area img {
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+    
+    .song-details {
+        text-align: center;
+        margin: 30px 0;
+        cursor: pointer;
+    }
+    
+    .song-details div {
+        color: white;
+    }
+    
+    .song-details .name {
+        font-size: 21px;
+    }
+    
+    .song-details .artist {
+        font-size: 15px;
+        line-height: 35px;
+        /* height btw lines */
+    }
+    
+    .progress-area {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        margin-right: 45px;
+        margin-left: 45px;
+        cursor: pointer;
+    }
+    
+    .progress-container {
+        background: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px 0;
+        height: 4px;
+        width: 100%;
+    }
+    
+    .progress {
+        background-color: black;
+        border-radius: 5px;
+        height: 100%;
+        width: 0%;
+        transition: width 0.1s linear;
+        cursor: pointer;
+    }
+    
+    .volume {
+        height: 28px;
+        width: 28px;
+        box-shadow: 0 0 0 2px white, 8px 8px 8px #ff5e66, -3px -3px 15px white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 70%;
+        margin-left: 30px;
+        color: white;
+    }
+    
+    .controls {
+        margin: 30px 0 30px 0;
+        position: relative;
+        /* padding-bottom: 10%; */
+    }
+    
+    .controls i {
+        font-size: 28px;
+        user-select: none;
+        color: white;
+    }
+    
+    #prev,
+    #next {
+        font-size: 43px;
+    }
+    
+    .controls .play-pause {
+        height: 54px;
+        width: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px white, 5px 5px 5px whitesmoke, -3px -3px 5px white;
+    }
+    
+    .prev,
+    .next {
+        box-shadow: 0 0 0 2px white, 5px 5px 5px whitesmoke, -3px -3px 5px white;
+        border-radius: 50%;
+    }
+    
+    input {
+        position: absolute;
+        top: 66vh;
+        left: 15.5vw;
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+    
+    .playlist-tab {
+        margin-top: 2%;
+        margin-left: 4%;
+        height: 75vh;
+        width: 25vw;
+        box-shadow: 0 2px 5px black;
+        border-radius: 15px;
+        background: linear-gradient( black 0%, #546e7a 100%);
+    }
+    
+    .pSong {
+        line-height: 3.3rem;
+        padding-left: 6px;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        box-shadow: 0 2px 5px black;
+        cursor: pointer;
+        border-radius: 15px;
+        background-color: white;
+        background: linear-gradient( black 0%, #546e7a 100%);
+        color: white;
+        margin-top: 0.5rem;
+    }
+    
+    .audio-list {
+        position: relative;
+        color: black;
+        margin-top: 1.5rem;
+    }
+    
+    .playlist-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+        color: white;
+    }

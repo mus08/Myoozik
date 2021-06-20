@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myo͞ozik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <div class="secondPage">
+
+
+        <div class="musicContainer">
+            <div class="top-bar">
+                <div class="material-icons fav">favorite</div>
+                <span class="now-playing"> Now Playing</span>
+
+                <div class="material-icons moreMusic">queue_music</div>
+
+            </div>
+            <div class="img-area">
+                <img id="image" src="images/Pani Di Gal.jpg " style="width:100% ;height:160%;">
+            </div>
+
+
+            <div class="song-details ">
+                <div class="name ">Pani Di Gal</div>
+                <div class="artist ">Maninder Buttar</div>
+
+            </div>
+
+
+            <div class="progress-area ">
+
+                <audio src="music/Pani Di Gal.mp3 " id="audio "></audio>
+                <div class="current-timer ">0.00</div>
+                <div class="progress-container ">
+                    <div class="progress " id="progress ">
+                    </div>
+
+                </div>
+                <div class="max-duration ">0.00</div>
+            </div>
+
+
+            <div class="controls ">
+                <i id="repeat-playlist " class="material-icons repeat " title="playlist looped ">repeat</i>
+                <i id="prev " class="material-icons prev ">fast_rewind</i>
+                <div class="play-pause ">
+                    <i id="play " class=" material-icons play ">play_arrow</i>
+                </div>
+                <i id="next " class="material-icons next ">fast_forward</i>
+                <i id="vol " class="material-icons vol ">volume_up</i>
+
+            </div>
+
+
+        </div>
+
+        <div class="playlist-tab">
+            <div class="playlist-title"><b>Music</b></div>
+            <div class="audio-list"></div>
+        </div>
+
+    </div>
+    <script src="script.js ">
+    </script>
+</body>
+
+</html>
